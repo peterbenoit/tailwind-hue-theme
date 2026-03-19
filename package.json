@@ -1,0 +1,68 @@
+{
+	"name": "tailwind-hue-theme",
+	"version": "0.1.0",
+	"description": "Tailwind CSS v4 plugin for dynamic OKLCH hue theming with an optional HuePicker widget",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
+		},
+		"./widget": {
+			"types": "./dist/widget.d.ts",
+			"import": "./dist/widget.mjs",
+			"require": "./dist/widget.js"
+		}
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"test": "vitest",
+		"test:run": "vitest run",
+		"prepublishOnly": "npm run build && npm run test:run"
+	},
+	"keywords": [
+		"tailwindcss",
+		"tailwind-plugin",
+		"theming",
+		"oklch",
+		"color",
+		"hue",
+		"dark-mode",
+		"css-variables"
+	],
+	"author": "Peter Benoit",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/peterbenoit/tailwind-hue-theme.git"
+	},
+	"bugs": {
+		"url": "https://github.com/peterbenoit/tailwind-hue-theme/issues"
+	},
+	"homepage": "https://github.com/peterbenoit/tailwind-hue-theme#readme",
+	"peerDependencies": {
+		"tailwindcss": ">=4.0.0"
+	},
+	"peerDependenciesMeta": {
+		"tailwindcss": {
+			"optional": true
+		}
+	},
+	"devDependencies": {
+		"@types/node": "^22.0.0",
+		"jsdom": "^26.0.0",
+		"tailwindcss": "^4.2.1",
+		"tsup": "^8.3.0",
+		"typescript": "^5.7.0",
+		"vitest": "^2.1.0"
+	}
+}
