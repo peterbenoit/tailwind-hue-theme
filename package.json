@@ -50,7 +50,7 @@
 	"bugs": {
 		"url": "https://github.com/peterbenoit/tailwind-hue-theme/issues"
 	},
-	"homepage": "https://github.com/peterbenoit/tailwind-hue-theme#readme",
+	"homepage": "https://tailwind-hue-theme-docs.vercel.app/",
 	"peerDependencies": {
 		"tailwindcss": ">=4.0.0"
 	},
