@@ -1,6 +1,6 @@
 {
 	"name": "tailwind-hue-theme",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Tailwind CSS v4 plugin for dynamic OKLCH hue theming with an optional HuePicker widget",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
