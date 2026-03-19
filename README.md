@@ -189,3 +189,7 @@ import { HuePicker, DEFAULT_PRESETS, getWidgetCSS, type HuePickerOptions, type H
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+---
+
+Created by [Peter Benoit](https://www.peterbenoit.com)
