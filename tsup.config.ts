@@ -12,7 +12,7 @@ export default defineConfig({
 	sourcemap: true,
 	treeshake: true,
 	minify: false,
-  // Suppress the "named + default" CJS warning — our index re-exports both.
-  esbuildOptions(options) {
-    options.ignoreAnnotations = true
-  },
+	// Suppress the "named + default" CJS warning — our index re-exports both.
+	esbuildOptions(options) {
+		options.ignoreAnnotations = true
+	},

@@ -397,10 +397,10 @@ export class HuePicker {
 			btn.classList.toggle('is-active', Number(btn.dataset.hue) === this._hue)
 		})
 
-if (persist) {
-      localStorage.setItem(this._storageKey, String(this._hue))
-      this._onChange?.(this._hue)
-    }
+		if (persist) {
+			localStorage.setItem(this._storageKey, String(this._hue))
+			this._onChange?.(this._hue)
+		}
 	}
 
 	private _updateHandle(): void {
